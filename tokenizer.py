@@ -40,7 +40,7 @@ corpus = ["我爱北京", "天安门上太阳升", "自然语言处理"]
 tokenizer = SimpleTokenizer()
 tokenizer.train(corpus)
 
-text = "我爱自然"
+text = "我爱自然，笑嘻嘻"
 result = tokenizer.encode(text, max_length=12)
 print("编码结果:", result)
 # 编码结果: {'input_ids': [2, 4, 5, 6, 7, 3, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]}
